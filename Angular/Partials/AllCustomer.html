@@ -1,0 +1,26 @@
+﻿<div class="container">
+<h2>All Customers List</h2>
+  Find the Customer: 
+     <input type="text" data-ng-model="filter.CustomerID" />
+   
+   
+ <!--   <ul>
+        <li data-ng-repeat="cust in allcustomer |orderBy:'city' ">{{ cust.CustomerID }}
+            <b style="color:red;"> belongs from </b> {{ cust.City }}  <b style="color:red;"> and work in </b> {{ cust.CompanyName }}  </li>
+
+    </ul>-->
+
+    <div style="width: 270px;height: 134px;background: #8ec12d;color: #333;border-radius: 20px/60px;margin-top: 20px;float: right;margin-right :35px; border: 1px solid rgba(0,0,0,0.05); box-shadow:inset 0 2px 3px rgba(255,255,255,0.3), inset 0 -2px 3px rgba(0,0,0,0.3),0 1px 1px rgba(255,255,255,0.9);" data-ng-repeat="cust in allcustomer| filter:filter.CustomerID|orderBy:'CustomerID' ">
+    <br/>
+        <label style="margin-left: 26px;">C.ID :&nbsp;&nbsp;&nbsp;&nbsp;</label> {{ cust.CustomerID }}
+    <br/>
+        <label style="margin-left: 26px;">Lives in :&nbsp;&nbsp;&nbsp;</label> {{ cust.City }}
+    <br/>
+        <label style="margin-left: 26px;">Work At :</label> {{ cust.CompanyName }}
+    <br/>
+    <br/>
+        
+        <a style="float: right;margin-right: 20px;" href="#/OrdersByCustomerID/{{ cust.CustomerID }}" >See Orders</a>
+  </div>
+   
+</div>

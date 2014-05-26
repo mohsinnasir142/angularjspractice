@@ -1,0 +1,11 @@
+<h2> View 2</h2>
+<div>
+    Name:
+    <br/>
+    <input type="text" data-ng-model="city" />
+    <ul>
+        <li data-ng-repeat="cust in customer |filter:city |orderBy:'name' ">{{ cust.name }}
+            <b style="color:red;"> belongs from </b> {{ cust.city }} </li>
+
+    </ul>
+</div>
