@@ -1,0 +1,145 @@
+﻿<div class="container">
+      <style>
+	#accordion-resizer {
+		padding: 10px;
+		width: 200px;
+		height: auto;
+        float:left;
+	}
+    ul
+    {
+        list-style-type: none;
+    }
+  li{
+        margin-left: -40px;
+    }
+ .check{
+          float:left;
+       }
+ .combo{
+          width: 100%;
+       }
+	</style>
+<h2>Tabular View</h2>
+<div style="width:100%;height:500px;background-color:white;">
+<div id="accordion-resizer" class="ui-widget-content">
+	<div id="accordion">
+       <h3> <img src="accordian/css/images/spreadsheet_AggAR.png" /> Fields</h3>
+		<div>
+           <ul>
+               <li ui-draggable="true"   on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/spreadsheet_AggAR.png" /> Sales_Opt  </li>
+               <li ui-draggable="true"   on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/spreadsheet_AggAR.png" /> Sales_Code  </li>
+               <li ui-draggable="true"   on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/spreadsheet_AggAR.png" /> Sales_Qty  </li>
+               <li ui-draggable="true"   on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/spreadsheet_AggAR.png" /> Sales_Price  </li>
+               <li ui-draggable="true"   on-drop-success="dropSuccess($event)"" ><img src="accordian/css/images/spreadsheet_AggAR.png" /> Sales_item  </li>
+               <li ui-draggable="true"   on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/spreadsheet_AggAR.png" /> Item_Code  </li>
+               <li ui-draggable="true"   on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/spreadsheet_AggAR.png" /> Item_Tax  </li>
+               <li ui-draggable="true"   on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/spreadsheet_AggAR.png" /> Item_Type  </li>
+               <li ui-draggable="true"   on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/spreadsheet_AggAR.png" /> Item_Group  </li>
+               <li ui-draggable="true"   on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/spreadsheet_AggAR.png" /> Item_Name </li>
+               <li ui-draggable="true"   on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/spreadsheet_AggAR.png" /> Item_Tax  </li>
+               <li ui-draggable="true"   on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/spreadsheet_AggAR.png" /> Item_ASP  </li>
+
+
+
+           </ul>
+
+		</div>
+		<h3><img src="accordian/css/images/funnel.png" /> Filters</h3>
+		<div>
+            <ul>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/funnel.png" /> Sales_Opt  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/funnel.png" /> Sales_Code  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/funnel.png" /> Sales_Qty  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/funnel.png" /> Sales_Price  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/funnel.png" /> Sales_item  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/funnel.png" /> Item_Code  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/funnel.png" /> Item_Tax  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/funnel.png" /> Item_Type  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/funnel.png" /> Item_Group  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/funnel.png" /> Item_Name </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/funnel.png" /> Item_Tax  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/funnel.png" /> Item_ASP  </li>
+
+
+
+            </ul>
+
+
+		</div>
+		<h3><img src="accordian/css/images/agreegate.png" /> FieldSet</h3>
+		<div>
+
+            <ul>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/agreegate.png" /> Sales_Opt  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/agreegate.png" /> Sales_Code  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/agreegate.png" /> Sales_Qty  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/agreegate.png" /> Sales_item  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/agreegate.png" /> Item_Code  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/agreegate.png" /> Item_Tax  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/agreegate.png" /> Item_Type  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/agreegate.png" /> Item_Group  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/agreegate.png" /> Item_Name </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/agreegate.png" /> Item_Tax  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/agreegate.png" /> Item_ASP  </li>
+
+
+
+            </ul>
+
+		</div>
+		<h3><img src="accordian/css/images/712.png" /> Expression</h3>
+		<div>
+
+            <ul>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/712.png" /> Sales_Opt  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/712.png" /> Sales_Code  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/712.png" /> Sales_Qty  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/712.png" /> Sales_item  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/712.png" /> Item_Code  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/712.png" /> Item_Type</li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/712.png" /> Item_Tax  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/712.png" /> Item_Group  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/712.png" /> Item_Name </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/712.png" /> Item_Tax  </li>
+                <li ui-draggable="true"  on-drop-success="dropSuccess($event)" ><img src="accordian/css/images/712.png" /> Item_ASP  </li>
+
+
+
+            </ul>
+
+		</div>
+	</div>
+</div>
+    <div style="background-color:rgb(231, 231, 231);height:500px;float:left;width:85%;margin-left:10px;overflow:auto"   ui-on-Drop="">
+        <input type="checkbox" data-ng-change="changeCB()" id="enent" />
+         <button data-ng-click="AddCustomer()">Add Customer</button>
+     <table id="tree"  ></table>
+
+     <div class="contextMenu" id="myMenu1" style="display:none">
+          <ul style="width: 200px">
+              
+              <li id="caption">
+                  <span class="ui-icon ui-icon-calculator" style="float:left"></span>
+                  <span style="font-size:11px; font-family:Verdana">Caption</span>
+              </li>
+              
+              <li id="removecolumns">
+                  <span class="ui-icon ui-icon-trash" style="float:left"></span>
+                  <span style="font-size:11px; font-family:Verdana">Remove Column(s)</span>
+              </li>
+              
+              <li id="addgroups">
+                  <span class="ui-icon ui-icon-trash" style="float:left"></span>
+                  <span style="font-size:11px; font-family:Verdana">Add To Group</span>
+              </li>
+              
+          </ul>
+     </div>
+
+
+    </div>
+
+</div>
+    </div>
+
