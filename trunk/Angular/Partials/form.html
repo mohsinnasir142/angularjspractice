@@ -4,7 +4,16 @@
     <div ng-controller="formController">
   <input ng-model="firstname"  placeholder="Enter First Name" />
         <br />
-        <input type="checkbox" ng-model="checkbox" ng-true-value="YES" ng-false-value="NO"> <br/>
+
+         <input type="checkbox" ng-model="checkbox" ng-true-value="YES" ng-false-value="NO"> <br/>
+         <input type="datetime-local" id="exampleInput" name="input" ng-model="datetime"  placeholder="yyyy-MM-ddTHH:mm" required /><br />
+        
+         <input type="radio" ng-model="radio" value="red">  Red <br/>
+         <input type="radio" ng-model="radio" value="green"> Green <br/>
+         <input type="radio" ng-model="radio" value="blue"> Blue <br/>
+
+        <input type="date" ng-model="date"  placeholder="yyyy-MM-dd"  /><br />
+
         <button ng-click="submit()">Submit</button>
 </div>
 

@@ -244,7 +244,17 @@ myApp.controller('TabularViewController', function ($scope) {
         createSmallGrid();
 
     };
-    $scope.dropSuccess = function ($event) {
+    $scope.dropSuccess = function ($event, ui) {
+        
+        if (document.elementFromPoint($event.x, $event.y).nodeName == "TD")
+        {
+                alert($(document.elementFromPoint($event.x, $event.y)).attr('aria-describedby'));
+        }
+        else if (document.elementFromPoint($event.x, $event.y).parentElement.nodeName == "TD")
+        {
+            alert($(document.elementFromPoint($event.x, $event.y).parentElement).attr('aria-describedby'));
+        }
+       
         var source = $event.currentTarget.innerText;
         source = source.replace(" ", "");
         var DropWidth = source.length * 10;
@@ -272,7 +282,8 @@ myApp.controller('formController', function ($scope) {
     
     }
     $scope.submit = function () {
-        alert($scope.firstname + ' check box is ' + $scope.checkbox);
+        alert($scope.firstname + ' check box is ' + $scope.checkbox + '  and local datetime is ' + $scope.datetime + ' radio is ' + $scope.radio);
+        alert('date is ' + $scope.date);
     
     };
 
