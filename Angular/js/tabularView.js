@@ -194,10 +194,7 @@ function insertNodes(input,facename,facevalue,state,datatype,width){
         //sortable:true,
         sortable : { 
             update: function (perumtation) {
-                for (i = 2; i < perumtation.length - 6; i++)
-                {
-                       alert(OrignalModel[i].name + " Position will change with " + $('#tree').jqGrid('getGridParam', 'colModel')[i].name);
-                }
+                ReArrangeColumns(perumtation);
             },
         },
         rowNum: 10000,
@@ -723,4 +720,40 @@ function increaseWidthOfColumnOnResize(ModelName,newWidth) {
         }
     }
 
+}
+function ReArrangeColumns(CurrentOrder)
+{
+    //var Index1 = 0;
+    //var Index2 = 0;
+    //for (i = 2; i < CurrentOrder.length - 6; i++) {
+    //    if (OrignalModel[i].name != $('#tree').jqGrid('getGridParam', 'colModel')[i].name) {
+    //        alert(OrignalModel[i].name + " Position will change with " + $('#tree').jqGrid('getGridParam', 'colModel')[i].name);
+    //        for (j = 2; j < OrignalModel.length - 1; j++)
+    //        {
+    //            if (OrignalModel[j].name == $('#tree').jqGrid('getGridParam', 'colModel')[i].name) {
+
+    //                Index1 = j;
+                    
+    //            }
+    //           else if (OrignalModel[j].name == OrignalModel[i].name) {
+    //               Index2 = j;
+                    
+    //           }
+
+    //        }
+    //        alert("Index1 is " + Index1 + "  & Index2 is " + Index2);
+    //    }
+    //}
+    OrignalModel = [];
+    OrignalName = [];
+    for (i = 0; i < $('#tree').jqGrid('getGridParam', 'colModel').length - 6; i++)
+    {
+        OrignalModel.push($('#tree').jqGrid('getGridParam', 'colModel')[i]);
+        OrignalName.push($('#tree').jqGrid('getGridParam', 'colNames')[i]);
+    }
+    //for (i = 0; i < $('#tree').jqGrid('getGridParam', 'colNames').length - 6; i++) {
+    //    OrignalName.push($('#tree').jqGrid('getGridParam', 'colNames')[i]);
+    //}
+
+   
 }
