@@ -8,4 +8,12 @@
             <b style="color:red;"> belongs from </b> {{ cust.city }} </li>
 
     </ul>
+    Click me: <input type="checkbox" ng-model="checked" ng-init="checked=true" /><br/>
+Show when checked:
+<span ng-if="checked" class="animate-if">
+  I'm removed when the checkbox is unchecked.
+</span>
+    <br /><br /><br /><br />
+    <input type="text" ng-model="color" placeholder="Enter a color" />
+    <div data-hello-world></div>
 </div>
