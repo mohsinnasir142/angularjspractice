@@ -1,0 +1,2 @@
+This Project implements the Model , View ,Controller architecture  on client side using Angular.js that is powered by google.
+I have created different views,controller ,factories,model in it and also call the REST services in it.
